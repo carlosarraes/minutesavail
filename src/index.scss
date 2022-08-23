@@ -17,7 +17,7 @@
 
 *{
   margin: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
 }
 
 html,body, #root {
@@ -34,14 +34,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-main {
-  width: 90%;
-  text-align: center;
+  flex-direction: column;
 }
 
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+header {
+  width: 100%;
+  text-align: center;
 }

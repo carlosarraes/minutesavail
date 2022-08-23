@@ -3,9 +3,9 @@ import React from 'react'
 function App() {
 
   return (
-    <main>
-      <h1>App</h1>
-    </main>
+    <header>
+      <h2>Planejador de minutos!</h2>
+    </header>
   )
 }
 

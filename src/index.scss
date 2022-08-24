@@ -1,3 +1,8 @@
+$primary: rgba(255, 255, 255, 0.87);
+$secondary: hsla(138, 90%, 4%, 0.8);
+$tertiary: dodgerblue;
+
+
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -5,8 +10,8 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: hsla(138, 90%, 4%, 0.8);
+  color: $primary;
+  background-color: $secondary;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -38,11 +43,71 @@ body {
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 2.5em;
   line-height: 1.1;
 }
 
 header {
   width: 100%;
+  text-align: center;
+}
+
+fieldset{
+  border-color: khaki;
+  text-align: center;
+  margin: 20px 0;
+}
+
+legend{
+  color: $tertiary;
+  font-size: 1em;
+  letter-spacing: 0.25em;
+  margin: 0 auto;
+}
+
+#app--title{
+  margin: 10px 0;
+  color: $tertiary;
+}
+
+input{
+  border-color: $secondary;
+  background-color: $primary;
+  padding: 5px 10px;
+  color: $secondary;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+}
+
+.left{
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.right {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button {
+  border-radius: 5px;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 5px;
+  font-size: 0.8em;
+  font-weight: 700;
+  background-color: $secondary;
+  border-color: $tertiary;
+  color: $tertiary;
+  transition: all 0.2s ease-in;
+}
+
+button:hover {
+  color: $secondary;
+  background-color: $tertiary;
+}
+
+h1 {
+  margin-top: 20px;
   text-align: center;
 }

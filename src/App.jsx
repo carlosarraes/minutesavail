@@ -4,7 +4,7 @@ function App() {
 
   return (
     <header>
-      <h2>Planejador de minutos!</h2>
+      <h2 id="app--title">Não leve falta!</h2>
     </header>
   )
 }

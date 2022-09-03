@@ -1,7 +1,10 @@
-$primary: rgba(255, 255, 255, 0.87);
-$secondary: hsla(138, 90%, 4%, 0.8);
-$tertiary: dodgerblue;
-
+$bgcolor: #16161a;
+$headline: #7f5af0;
+$details: #fffffe;
+$details-100: rgba(255, 255, 255, 0.87);
+$details-200: #94a1b2;
+$btn-bg: #1a1e23;
+$btn-bg-200: #21262d;
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -10,22 +13,24 @@ $tertiary: dodgerblue;
   font-weight: 400;
 
   color-scheme: light dark;
-  color: $primary;
-  background-color: $secondary;
+  background-color: $bgcolor;
 
   font-synthesis: none;
+  color: $details-100;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
 
-*{
+* {
   margin: 0;
   // border: 1px solid red;
 }
 
-html,body, #root {
+html,
+body,
+#root {
   height: 100vh;
 }
 
@@ -52,34 +57,34 @@ header {
   text-align: center;
 }
 
-fieldset{
-  border-color: khaki;
+fieldset {
+  border-color: $details;
   text-align: center;
   margin: 20px 0;
 }
 
-legend{
-  color: $tertiary;
+legend {
+  color: $headline;
   font-size: 1em;
   letter-spacing: 0.25em;
   margin: 0 auto;
 }
 
-#app--title{
+#app--title {
   margin: 10px 0;
-  color: $tertiary;
+  color: $headline;
 }
 
-input{
-  border-color: $secondary;
-  background-color: $primary;
+input {
+  border-color: $bgcolor;
   padding: 5px 10px;
-  color: $secondary;
+  color: $bgcolor;
   margin-bottom: 5px;
+  background-color: $details-100;
   font-size: 0.9em;
 }
 
-.left{
+.left {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
@@ -89,25 +94,64 @@ input{
   border-bottom-right-radius: 5px;
 }
 
-button {
+.btn {
   border-radius: 5px;
   margin-bottom: 10px;
   width: 100%;
   padding: 5px;
   font-size: 0.8em;
   font-weight: 700;
-  background-color: $secondary;
-  border-color: $tertiary;
-  color: $tertiary;
+  background-color: $bgcolor;
+  border-color: $headline;
+  color: $headline;
   transition: all 0.2s ease-in;
 }
 
-button:hover {
-  color: $secondary;
-  background-color: $tertiary;
+.btn:hover {
+  color: $bgcolor;
+  background-color: $headline;
 }
 
 h1 {
   margin-top: 20px;
   text-align: center;
+}
+
+h6 {
+  text-align: center;
+}
+
+.ff {
+  color: $headline;
+  font-size: 0.8em;
+  position: relative;
+  bottom: 3px;
+}
+
+footer {
+  margin-top: 15px;
+  text-align: center;
+}
+
+footer p {
+  margin-top: 2em;
+  font-size: 0.6em;
+}
+
+.app--btn {
+  padding: 5px 10px;
+  color: #c9d1d9;
+  font-size: 0.8em;
+  border-color: rgba(240, 246, 252, 0.1);
+  background-color: $btn-bg;
+  background-image: linear-gradient(180deg, $btn-bg-200, $btn-bg 90%);
+  cursor: pointer;
+}
+
+.app--btn:hover {
+  border-color: $details;
+}
+
+.app--btnS {
+  padding-left: 5px;
 }

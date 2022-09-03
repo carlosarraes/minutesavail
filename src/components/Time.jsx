@@ -47,7 +47,8 @@ const Time = () => {
         </fieldset>
         <section className="resut">
             <button className="btn" onClick={handleClick}>Calcular</button>
-            <h1>{Math.floor(((calc.dOpen._milliseconds/1000/60) + (calc.dAula._milliseconds/1000/60) + (calc.dClose._milliseconds/1000/60))*0.2)} minutos</h1>
+            <h1><span className="ff">&gt;</span> {Math.floor(((calc.dOpen._milliseconds/1000/60) + (calc.dAula._milliseconds/1000/60) + (calc.dClose._milliseconds/1000/60))*0.2)} minutos <span className="ff">&lt;</span></h1>
+            <h6>Representa 20% do total</h6>
         </section>
     </main>
   )

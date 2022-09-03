@@ -1,5 +1,5 @@
 $bgcolor: #16161a;
-$headline: #7f5af0;
+$headline: #00e485;
 $details: #fffffe;
 $details-100: rgba(255, 255, 255, 0.87);
 $details-200: #94a1b2;
@@ -131,11 +131,11 @@ h6 {
 footer {
   margin-top: 15px;
   text-align: center;
-}
 
-footer p {
-  margin-top: 2em;
-  font-size: 0.6em;
+  p {
+    margin-top: 2em;
+    font-size: 0.6em;
+  }
 }
 
 .app--btn {
